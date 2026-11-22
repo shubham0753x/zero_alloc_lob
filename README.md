@@ -14,7 +14,7 @@ zero_alloc_lob/
 |-- 1_sstl_base/                                  # Stage 1: std::map baseline + results
 |-- 2_pool_allocator_added_map_removed/           # Stage 2: pool allocator, flat limits, hierarchical bitmask
 |-- 3_replaced_unordered_map_with_flat_hash_map/  # Stage 3: absl::flat_hash_map
-|-- 4_FINAL/                                      # Stage 4: flattened bitmask (final version)
+|-- 4_FINAL/                                      # Stage 4: flattened bitmask 
 |-- Presentation/                                 # slides walking through the whole process
 |
 |-- pool_allocator.hpp                # free-list pool allocator
@@ -27,7 +27,7 @@ zero_alloc_lob/
 |-- LOB_selph_tree_dynamic.cpp        # tree-based, dynamically allocated LOB
 |-- benchmark_bitset.cpp              # bitmask microbenchmark (flat vs hierarchical)
 |-- main.cpp                          # workload driver / benchmark harness
-|-- test.cpp                          # correctness tests
+|-- test.cpp                          # component-wise test
 |-- plot_bitset.ipynb                 # plots for the bitmask benchmark
 |-- visualize.ipynb                   # latency percentile / histogram plots
 ```
